@@ -35,10 +35,9 @@ try:
         if is_int(c):
             c = int(c)
         else:
-            c = float(c)
+            c = round(float(c),5)
         print(f"{a} {op} {b} = {c}")
     else:
         print('')
 except:
     print("Invalid input...")
-
